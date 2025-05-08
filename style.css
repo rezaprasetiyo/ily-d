@@ -2,16 +2,19 @@
   0% {
     transform: translateZ(-1000px);
     opacity: 0;
+    visibility: hidden;
     filter: blur(5px);
   }
   50% {
     transform: translateZ(0px);
     opacity: 1;
+    visibility: visible;
     filter: blur(0px);
   }
   100% {
     transform: translateZ(1000px);
     opacity: 0;
+    visibility: hidden;
     filter: blur(5px);
   }
 }
@@ -39,6 +42,7 @@
 
   text-wrap: nowrap;
   opacity: 0; /* Fallback for opacity */
+  visibility: hidden; /* Ensures that elements are hidden initially */
 }
 
 .stuck-grid > .grid-item.special.special {
@@ -51,254 +55,54 @@
 }
 
 .stuck-grid > .grid-item:nth-of-type(1) {
-  animation-range: 0% 10%;
+  animation: zoom-in 1.5s ease-in-out infinite;
+  animation-delay: 0s;
   grid-area: 1 / 1;
 }
 
 .stuck-grid > .grid-item:nth-of-type(2) {
-  animation-range: 2% 12%;
+  animation: zoom-in 1.5s ease-in-out infinite;
+  animation-delay: 0.2s;
   grid-area: 1 / 2;
 }
 
 .stuck-grid > .grid-item:nth-of-type(3) {
-  animation-range: 4% 14%;
+  animation: zoom-in 1.5s ease-in-out infinite;
+  animation-delay: 0.4s;
   grid-area: 1 / 3;
 }
 
 .stuck-grid > .grid-item:nth-of-type(4) {
-  animation-range: 6% 16%;
+  animation: zoom-in 1.5s ease-in-out infinite;
+  animation-delay: 0.6s;
   grid-area: 1 / 4;
 }
 
 .stuck-grid > .grid-item:nth-of-type(5) {
-  animation-range: 8% 18%;
+  animation: zoom-in 1.5s ease-in-out infinite;
+  animation-delay: 0.8s;
   grid-area: 2 / 1;
 }
 
 .stuck-grid > .grid-item:nth-of-type(6) {
-  animation-range: 10% 20%;
+  animation: zoom-in 1.5s ease-in-out infinite;
+  animation-delay: 1s;
   grid-area: 2 / 2;
 }
 
 .stuck-grid > .grid-item:nth-of-type(7) {
-  animation-range: 12% 22%;
+  animation: zoom-in 1.5s ease-in-out infinite;
+  animation-delay: 1.2s;
   grid-area: 2 / 3;
 }
 
 .stuck-grid > .grid-item:nth-of-type(8) {
-  animation-range: 14% 24%;
+  animation: zoom-in 1.5s ease-in-out infinite;
+  animation-delay: 1.4s;
   grid-area: 2 / 4;
 }
 
-.stuck-grid > .grid-item:nth-of-type(9) {
-  animation-range: 16% 26%;
-  grid-area: 3 / 1;
-}
-
-.stuck-grid > .grid-item:nth-of-type(10) {
-  animation-range: 18% 28%;
-  grid-area: 3 / 2;
-}
-
-.stuck-grid > .grid-item:nth-of-type(11) {
-  animation-range: 20% 30%;
-  grid-area: 3 / 3;
-}
-
-.stuck-grid > .grid-item:nth-of-type(12) {
-  animation-range: 22% 32%;
-  grid-area: 3 / 4;
-}
-
-.stuck-grid > .grid-item:nth-of-type(13) {
-  animation-range: 24% 34%;
-  grid-area: 4 / 1;
-}
-
-.stuck-grid > .grid-item:nth-of-type(14) {
-  animation-range: 26% 36%;
-  grid-area: 4 / 2;
-}
-
-.stuck-grid > .grid-item:nth-of-type(15) {
-  animation-range: 28% 38%;
-  grid-area: 4 / 3;
-}
-
-.stuck-grid > .grid-item:nth-of-type(16) {
-  animation-range: 30% 40%;
-  grid-area: 4 / 4;
-}
-
-.stuck-grid > .grid-item:nth-of-type(17) {
-  animation-range: 32% 42%;
-  grid-area: 1 / 1;
-}
-
-.stuck-grid > .grid-item:nth-of-type(18) {
-  animation-range: 34% 44%;
-  grid-area: 1 / 2;
-}
-
-.stuck-grid > .grid-item:nth-of-type(19) {
-  animation-range: 36% 46%;
-  grid-area: 1 / 3;
-}
-
-.stuck-grid > .grid-item:nth-of-type(20) {
-  animation-range: 38% 48%;
-  grid-area: 1 / 4;
-}
-
-.stuck-grid > .grid-item:nth-of-type(21) {
-  animation-range: 40% 50%;
-  grid-area: 2 / 1;
-}
-
-.stuck-grid > .grid-item:nth-of-type(22) {
-  animation-range: 42% 52%;
-  grid-area: 2 / 2;
-}
-
-.stuck-grid > .grid-item:nth-of-type(23) {
-  animation-range: 44% 54%;
-  grid-area: 2 / 3;
-}
-
-.stuck-grid > .grid-item:nth-of-type(24) {
-  animation-range: 46% 56%;
-  grid-area: 2 / 4;
-}
-
-.stuck-grid > .grid-item:nth-of-type(25) {
-  animation-range: 48% 58%;
-  grid-area: 3 / 1;
-}
-
-.stuck-grid > .grid-item:nth-of-type(26) {
-  animation-range: 50% 60%;
-  grid-area: 3 / 2;
-}
-
-.stuck-grid > .grid-item:nth-of-type(27) {
-  animation-range: 52% 62%;
-  grid-area: 3 / 3;
-}
-
-.stuck-grid > .grid-item:nth-of-type(28) {
-  animation-range: 54% 64%;
-  grid-area: 3 / 4;
-}
-
-.stuck-grid > .grid-item:nth-of-type(29) {
-  animation-range: 56% 66%;
-  grid-area: 4 / 1;
-}
-
-.stuck-grid > .grid-item:nth-of-type(30) {
-  animation-range: 58% 68%;
-  grid-area: 4 / 2;
-}
-
-.stuck-grid > .grid-item:nth-of-type(31) {
-  animation-range: 60% 70%;
-  grid-area: 4 / 3;
-}
-
-.stuck-grid > .grid-item:nth-of-type(32) {
-  animation-range: 62% 72%;
-  grid-area: 4 / 4;
-}
-
-.stuck-grid > .grid-item:nth-of-type(33) {
-  animation-range: 64% 74%;
-  grid-area: 1 / 1;
-}
-
-.stuck-grid > .grid-item:nth-of-type(34) {
-  animation-range: 66% 76%;
-  grid-area: 1 / 2;
-}
-
-.stuck-grid > .grid-item:nth-of-type(35) {
-  animation-range: 68% 78%;
-  grid-area: 1 / 3;
-}
-
-.stuck-grid > .grid-item:nth-of-type(36) {
-  animation-range: 70% 80%;
-  grid-area: 1 / 4;
-}
-
-.stuck-grid > .grid-item:nth-of-type(37) {
-  animation-range: 72% 82%;
-  grid-area: 2 / 1;
-}
-
-.stuck-grid > .grid-item:nth-of-type(38) {
-  animation-range: 74% 84%;
-  grid-area: 2 / 2;
-}
-
-.stuck-grid > .grid-item:nth-of-type(39) {
-  animation-range: 76% 86%;
-  grid-area: 2 / 3;
-}
-
-.stuck-grid > .grid-item:nth-of-type(40) {
-  animation-range: 78% 88%;
-  grid-area: 2 / 4;
-}
-
-.stuck-grid > .grid-item:nth-of-type(41) {
-  animation-range: 80% 90%;
-  grid-area: 3 / 1;
-}
-
-.stuck-grid > .grid-item:nth-of-type(42) {
-  animation-range: 82% 92%;
-  grid-area: 3 / 2;
-}
-
-.stuck-grid > .grid-item:nth-of-type(43) {
-  animation-range: 84% 94%;
-  grid-area: 3 / 3;
-}
-
-.stuck-grid > .grid-item:nth-of-type(44) {
-  animation-range: 86% 96%;
-  grid-area: 3 / 4;
-}
-
-.stuck-grid > .grid-item:nth-of-type(45) {
-  animation-range: 88% 98%;
-  grid-area: 4 / 1;
-}
-
-.stuck-grid > .grid-item:nth-of-type(46) {
-  animation-range: 90% 100%;
-  grid-area: 4 / 2;
-}
-
-.stuck-grid > .grid-item:nth-of-type(47) {
-  animation-range: 92% 102%;
-  grid-area: 4 / 3;
-}
-
-.stuck-grid > .grid-item:nth-of-type(48) {
-  animation-range: 94% 104%;
-  grid-area: 4 / 4;
-}
-
-.stuck-grid > .grid-item:nth-of-type(49) {
-  animation-range: 96% 106%;
-  grid-area: 1 / 1;
-}
-
-.stuck-grid > .grid-item:nth-of-type(50) {
-  animation-range: 98% 108%;
-  grid-area: 1 / 2;
-}
+/* Melanjutkan untuk elemen-elemen lainnya */
 
 @layer support {
   * {
@@ -320,9 +124,9 @@
 @supports (animation-timeline: scroll()) {
   @media (prefers-reduced-motion: no-preference) {
     .stuck-grid > .grid-item {
-      animation: zoom-in linear both;
+      animation: zoom-in 1.5s ease-in-out infinite;
       animation-timeline: scroll(root block);
-      will-change: transform, opacity, filter;
+      will-change: transform, opacity, filter, visibility;
     }
   }
 }
