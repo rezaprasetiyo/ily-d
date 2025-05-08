@@ -3,52 +3,12 @@
   <div class="grid-item">jangan suka begadang!</div>
   <div class="grid-item">i miss u..!!</div>
   <div class="grid-item">ayang jyeqq</div>
-  <div class="grid-item">jangan suka begadang!</div>
   <div class="grid-item">sayang aku ga sengg?🤬</div>
   <div class="grid-item">desma jlk🤣</div>
   <div class="grid-item">tetep jadi desma yang aku kenal ya!</div>
   <div class="grid-item">sayang bgt sma kamuu</div>
   <div class="grid-item">gboleh telat makan!</div>
   <div class="grid-item">desma lagi apa?</div>
-  <div class="grid-item">gabole nangis trs yaa!?</div>
-  <div class="grid-item">kamu jgn tinggalin aku ya!</div>
-  <div class="grid-item">unaaaaaaaa</div>
-  <div class="grid-item">i love u desma!</div>
-  <div class="grid-item">my worrlddd!!</div>
-  <div class="grid-item">desma mudah bdmood</div>
-  <div class="grid-item">WOEEYY</div>
-  <div class="grid-item">i love u desma</div>
-  <div class="grid-item">wholeheartedly</div>
-  <div class="grid-item">nda boleh selingkuh!</div>
-  <div class="grid-item">desma harus syg aku!</div>
-  <div class="grid-item">SENGGG</div>
-  <div class="grid-item">my brighteyes!!</div>
-  <div class="grid-item">my clementinee!</div>
-  <div class="grid-item">jangan tinggalin aku!</div>
-  <div class="grid-item">honeypie jyk</div>
-  <div class="grid-item">desma pernah ngompol!</div>
-  <div class="grid-item">sayang bgtt sama desmaa</div>
-  <div class="grid-item">desma jyq</div>
-  <div class="grid-item">i love u cece</div>
-  <div class="grid-item">sengg</div>
-  <div class="grid-item">desma jgn suka marah!</div>
-  <div class="grid-item">desma jyq</div>
-  <div class="grid-item">honeypieee</div>
-  <div class="grid-item">i love u desma!</div>
-  <div class="grid-item">desma love reza</div>
-  <div class="grid-item">kaget ga sengg? wkwk</div>
-  <div class="grid-item">desma milik aku!</div>
-  <div class="grid-item">nono tinggalin aku ya seng!!</div>
-  <div class="grid-item">love u liaa</div>
-  <div class="grid-item">desmineee</div>
-  <div class="grid-item">19 & 19</div>
-  <div class="grid-item">hai haii wkwk</div>
-  <div class="grid-item">desma jangan ngompol</div>
-  <div class="grid-item">i love u jyqq</div>
-  <div class="grid-item">i miss u desma</div>
-  <div class="grid-item">10.08.2024</div>
-  <div class="grid-item">sayang aku gak seng?!</div>
-  <div class="grid-item">my sunshine >.< </div>
 </div>
 
 <style>
@@ -69,85 +29,41 @@
     position: sticky;
     top: 0;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: 25vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 25vh);
     place-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
     background: #111;
     perspective: 800px;
-    flex-wrap: wrap;
   }
 
   .grid-item {
-    font-size: 2.2vmin;
+    font-size: 3vmin;
     opacity: 0;
     transform: scale(0.8) translateZ(-200px);
     animation: zoomInOut 5s infinite ease-in-out;
-    animation-delay: calc(var(--i, 0) * 0.15s);
-    text-align: center;
-    padding: 10px;
+    animation-delay: calc(var(--i, 0) * 0.2s);
   }
 
   .special {
-    grid-column: span 2;
-    grid-row: span 2;
-    font-size: 3vmin;
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+    font-size: 4vmin;
     font-weight: bold;
     color: #ff4f8b;
   }
 
-  /* CSS variabel animasi berdasarkan jumlah elemen */
-  .grid-item:nth-child(1)  { --i: 0; }
-  .grid-item:nth-child(2)  { --i: 1; }
-  .grid-item:nth-child(3)  { --i: 2; }
-  .grid-item:nth-child(4)  { --i: 3; }
-  .grid-item:nth-child(5)  { --i: 4; }
-  .grid-item:nth-child(6)  { --i: 5; }
-  .grid-item:nth-child(7)  { --i: 6; }
-  .grid-item:nth-child(8)  { --i: 7; }
-  .grid-item:nth-child(9)  { --i: 8; }
-  .grid-item:nth-child(10) { --i: 9; }
-  .grid-item:nth-child(11) { --i: 10; }
-  .grid-item:nth-child(12) { --i: 11; }
-  .grid-item:nth-child(13) { --i: 12; }
-  .grid-item:nth-child(14) { --i: 13; }
-  .grid-item:nth-child(15) { --i: 14; }
-  .grid-item:nth-child(16) { --i: 15; }
-  .grid-item:nth-child(17) { --i: 16; }
-  .grid-item:nth-child(18) { --i: 17; }
-  .grid-item:nth-child(19) { --i: 18; }
-  .grid-item:nth-child(20) { --i: 19; }
-  .grid-item:nth-child(21) { --i: 20; }
-  .grid-item:nth-child(22) { --i: 21; }
-  .grid-item:nth-child(23) { --i: 22; }
-  .grid-item:nth-child(24) { --i: 23; }
-  .grid-item:nth-child(25) { --i: 24; }
-  .grid-item:nth-child(26) { --i: 25; }
-  .grid-item:nth-child(27) { --i: 26; }
-  .grid-item:nth-child(28) { --i: 27; }
-  .grid-item:nth-child(29) { --i: 28; }
-  .grid-item:nth-child(30) { --i: 29; }
-  .grid-item:nth-child(31) { --i: 30; }
-  .grid-item:nth-child(32) { --i: 31; }
-  .grid-item:nth-child(33) { --i: 32; }
-  .grid-item:nth-child(34) { --i: 33; }
-  .grid-item:nth-child(35) { --i: 34; }
-  .grid-item:nth-child(36) { --i: 35; }
-  .grid-item:nth-child(37) { --i: 36; }
-  .grid-item:nth-child(38) { --i: 37; }
-  .grid-item:nth-child(39) { --i: 38; }
-  .grid-item:nth-child(40) { --i: 39; }
-  .grid-item:nth-child(41) { --i: 40; }
-  .grid-item:nth-child(42) { --i: 41; }
-  .grid-item:nth-child(43) { --i: 42; }
-  .grid-item:nth-child(44) { --i: 43; }
-  .grid-item:nth-child(45) { --i: 44; }
-  .grid-item:nth-child(46) { --i: 45; }
-  .grid-item:nth-child(47) { --i: 46; }
-  .grid-item:nth-child(48) { --i: 47; }
-  .grid-item:nth-child(49) { --i: 48; }
-  .grid-item:nth-child(50) { --i: 49; }
-  .grid-item:nth-child(51) { --i: 50; }
+  .grid-item:nth-child(1) { --i: 0 }
+  .grid-item:nth-child(2) { --i: 1 }
+  .grid-item:nth-child(3) { --i: 2 }
+  .grid-item:nth-child(4) { --i: 3 }
+  .grid-item:nth-child(5) { --i: 4 }
+  .grid-item:nth-child(6) { --i: 5 }
+  .grid-item:nth-child(7) { --i: 6 }
+  .grid-item:nth-child(8) { --i: 7 }
+  .grid-item:nth-child(9) { --i: 8 }
+  .grid-item:nth-child(10) { --i: 9 }
 
   @keyframes zoomInOut {
     0% {
